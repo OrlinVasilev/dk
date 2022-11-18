@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: app
+  labels:
+    app: app
+spec:
+  containers:
+  - name: app
+    image: orlix/app:k8s

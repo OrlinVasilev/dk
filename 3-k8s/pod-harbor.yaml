@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: app-harbor
+  labels:
+    app: app-harbor
+spec:
+  containers:
+  - name: bar-app
+    image: demo.goharbor.io/orlix/app:k8s
+    env:
+    - name: IMAGE
+      value: IN_KUBERNETES_FROM_HARBOR
