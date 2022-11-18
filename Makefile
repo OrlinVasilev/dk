@@ -50,3 +50,6 @@ k8s-deploy-dashboard:
 k8s-proxy:
 	kubectl proxy &
 	open http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/workloads?namespace=default
+
+octant:
+	octant
